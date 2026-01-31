@@ -37,11 +37,11 @@ public class DialougeManager : MonoBehaviour
         if (isInfected) 
         {
             currentState = infectedLines[Random.RandomRange(0,(infectedLines.Count)-1)];
-            updatCurrentState(currentState);
+            updateCurrentState(currentState);
             return;
         }
         currentState = infectedLines[Random.RandomRange(0,(safeLines.Count)-1)];
-        updatCurrentState(currentState);
+        updateCurrentState(currentState);
     }
 
     public void checkIfInfected(bool check) 
@@ -53,7 +53,7 @@ public class DialougeManager : MonoBehaviour
         }
     }
 
-    public void updatCurrentState(CharacterDialougeOBJ chg) 
+    public void updateCurrentState(CharacterDialougeOBJ chg) 
     {
         currentState = chg;
         foreach(var item in GameObject.FindGameObjectsWithTag("DialougeOption")) 
