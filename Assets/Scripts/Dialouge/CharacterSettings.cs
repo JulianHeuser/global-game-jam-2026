@@ -5,9 +5,9 @@ using UnityEngine;
 public class CharacterSettings : ScriptableObject
 {
     public List<CharacterDialougeOBJ> TiedTree;
-    public int preSyncNumber;
-    public string preSyncName;
-    public bool sirNameCanEndWithLetterPastP;
+    public List<int> precinctNumber;
+    public List<string> precinctName;
+    public bool surnameCanEndWithLetterPastP;
     public List<Sprite> head;
     public List<Sprite> neck;
     public List<Sprite> body;
