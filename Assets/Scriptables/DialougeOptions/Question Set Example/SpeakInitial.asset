@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge: Why Hello there young Traveler
   additionalOptions:
-  - {fileID: 11400000, guid: 43aa2f65b428ea4459fa89167816cdc3, type: 2}
-  - {fileID: 11400000, guid: e6964e710cfe5524a9ef456f0be64a07, type: 2}
-  - {fileID: 11400000, guid: d2622d45e7f2c6249a0a5eeccc417107, type: 2}
+  - {fileID: 11400000, guid: 58b8e200ab7e2334c839dccabf60cca6, type: 2}
+  - {fileID: 11400000, guid: de2a81867b816ca4ba8db796adba2461, type: 2}
+  - {fileID: 11400000, guid: f6350acfa04c07f4a95ebe8392108157, type: 2}
   additionalOptionsText:
   - Hello
   - hi
   - ok
+  responses:
+  - hi
+  - hi!!!!!!!!!!!!
+  - Yippie!!!!!!!!!!!

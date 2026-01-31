@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
-  m_Name: SpeakTest3
+  m_Name: SpeakSub3
   m_EditorClassIdentifier: 
-  dialouge: 
-  additionalOptions: []
+  dialouge: Maybe
+  additionalOptions:
+  - {fileID: 11400000, guid: f8c498c75f8a46d4eac5e8001d5f7322, type: 2}
+  additionalOptionsText:
+  - ....
+  responses: []
