@@ -513,6 +513,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 638876516761548054, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
   m_PrefabInstance: {fileID: 6545793822676053845}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1125026710 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2931040222812942663, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
+  m_PrefabInstance: {fileID: 6545793822676053845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1257521790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,12 +1035,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 385029430699060787, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_Size
-      value: 1
+      value: 0.4189148
       objectReference: {fileID: 0}
     - target: {fileID: 385029430699060787, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 385029430699060787, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
+      propertyPath: m_Direction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 814784133251477800, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
+      propertyPath: m_Viewport
+      value: 
+      objectReference: {fileID: 1125026710}
     - target: {fileID: 814784133251477800, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_VerticalScrollbar
       value: 
@@ -1055,6 +1068,14 @@ PrefabInstance:
     - target: {fileID: 1795501278935487739, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895855168170004779, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895855168170004779, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 749.0449
       objectReference: {fileID: 0}
     - target: {fileID: 1926097385132979622, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
