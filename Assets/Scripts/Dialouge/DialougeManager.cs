@@ -65,7 +65,7 @@ public class DialougeManager : MonoBehaviour
         {
             
             GameObject newOption = Instantiate(option, dialougeParent.transform);
-            newOption.GetComponent<Options>().updateObject(chg.additionalOptionsText[id],chg);
+            newOption.GetComponent<Options>().updateObject(chg.additionalOptionsText[id],item);
             id++;
 
         }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Options : MonoBehaviour
 {
-    CharacterDialougeOBJ selectedState;
+    [SerializeField]CharacterDialougeOBJ selectedState;
     [SerializeField] TMP_Text text;
 
 
