@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class NPCGen : MonoBehaviour
 {
-    [SerializeField]List<BodyPairs> InfectedPairs;
-    [SerializeField] List<BodyPairs> RegPairs;
+
 
 
 
