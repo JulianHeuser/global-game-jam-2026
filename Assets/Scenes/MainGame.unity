@@ -1047,6 +1047,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1440428789}
+    - target: {fileID: 1754294518685363971, guid: ebe4d013d56487f4c9ed5ae6b10c92be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754294518685363971, guid: ebe4d013d56487f4c9ed5ae6b10c92be, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2014632771475064912, guid: ebe4d013d56487f4c9ed5ae6b10c92be, type: 3}
       propertyPath: m_Name
       value: NPC
@@ -1067,6 +1075,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8325716708969122239, guid: ebe4d013d56487f4c9ed5ae6b10c92be, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6664101114584250794, guid: bed9a564538fea62ab5d0c7eee11345c, type: 3}
     - target: {fileID: 9183525974410095586, guid: ebe4d013d56487f4c9ed5ae6b10c92be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
