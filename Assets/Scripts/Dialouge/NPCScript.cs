@@ -1,7 +1,29 @@
 using UnityEngine;
 
 public class NPCScript : MonoBehaviour
-{
+{   
+    private static readonly string[] firstNames = {
+        "Yurekthos",
+        "Vikk",
+        "Tholus",
+        "Taenek’tet",
+        "Yudur",
+        "Jolen",
+        "Valkan"
+    };
+    
+    private static readonly string[] lastNames = {
+        "Kalob",
+        "Jahel-naarat",
+        "Jaelheka",
+        "Bahan’kaneb",
+        "Kaag",
+        "Olketheret"
+    };
+    
+    private static readonly string[] lastNames_pastP = {
+        "Taen",
+    };
 
     [SerializeField]
     private Sprite[] heads;
@@ -35,8 +57,19 @@ public class NPCScript : MonoBehaviour
     	bodySprite.sprite = bodies[index];
     }
     
-    private void setBreathingRate(float rate) {
+    public void setBreathingRate(float rate) {
     	headBobRate = rate;
+    }
+
+    public string getRandomFirstName() {
+    	return firstNames[Random.Range(0,firstNames.Length)];
+    }
+    
+    public string getRandomLastName(bool useLetterPastP) {
+    	if (useLetterPastP)
+    	    return lastNames_pastP[Random.Range(0,lastNames_pastP.Length)];
+    	
+    	return lastNames[Random.Range(0,lastNames.Length)];
     }
     
     private Vector3 headSpriteStartPos;
