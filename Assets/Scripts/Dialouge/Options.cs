@@ -1,16 +1,22 @@
+using TMPro;
 using UnityEngine;
 
 public class Options : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    CharacterDialougeOBJ selectedState;
+    [SerializeField] TMP_Text text;
+
+
+    public void updateObject(string pulledText,CharacterDialougeOBJ dialougeOBJ)
     {
-        
+        text.text = pulledText;
+        selectedState = dialougeOBJ;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void selectedNewOption() 
     {
-        
+        DialougeManager.current.updatCurrentState(selectedState);
     }
+    
+
 }

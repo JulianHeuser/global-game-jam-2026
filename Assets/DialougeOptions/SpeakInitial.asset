@@ -17,3 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 43aa2f65b428ea4459fa89167816cdc3, type: 2}
   - {fileID: 11400000, guid: e6964e710cfe5524a9ef456f0be64a07, type: 2}
   - {fileID: 11400000, guid: d2622d45e7f2c6249a0a5eeccc417107, type: 2}
+  additionalOptionsText:
+  - Hello
+  - hi
+  - ok

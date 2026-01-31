@@ -8,4 +8,6 @@ public class CharacterDialougeOBJ : ScriptableObject
     public string dialouge;
 
     public List<CharacterDialougeOBJ> additionalOptions;
+
+    public List<string> additionalOptionsText;
 }
