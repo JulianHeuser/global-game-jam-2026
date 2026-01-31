@@ -42,11 +42,13 @@ public class DialougeManager : MonoBehaviour
             currentState = (InfectedOptions[gen]).TiedTree[Random.RandomRange(0, InfectedOptions[gen].TiedTree.Count - 1)];
             currentSettings = InfectedOptions[gen];
             updateCurrentState(currentState);
+            NPCScript.current.changeBody();
             return;
         }
         gen = Random.RandomRange(0, (NonInfectedOptions.Count) - 1);
         currentState = (NonInfectedOptions[gen]).TiedTree[Random.RandomRange(0,NonInfectedOptions[gen].TiedTree.Count-1)];
         currentSettings= NonInfectedOptions[gen];
+        NPCScript.current.changeBody();
         updateCurrentState(currentState);
     }
 
