@@ -7,6 +7,9 @@ public class InfectionManager : MonoBehaviour
     bool isInfected;
     [SerializeField][Range(0, 10)] float infectedProbability;
     int misChecks;
+
+    
+
     private void Awake()
     {
         current = this;
