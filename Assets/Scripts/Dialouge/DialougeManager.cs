@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DialougeManager : MonoBehaviour
 {
-    [SerializeField][Range(0,10)] float infectedProbability;
+    
     CharacterDialougeOBJ currentState;
     bool isInfected;
-    int misChecks;
+
 
     [SerializeField]List<CharacterDialougeOBJ> infectedLines;
     [SerializeField]List<CharacterDialougeOBJ> safeLines;
@@ -33,7 +33,7 @@ public class DialougeManager : MonoBehaviour
     
     public void selectIfInfected() 
     {
-        isInfected = Random.RandomRange(0, 10) >= infectedProbability;
+        isInfected = InfectionManager.current.updateInfection();
         if (isInfected) 
         {
             currentState = infectedLines[Random.RandomRange(0,(infectedLines.Count)-1)];
@@ -44,14 +44,7 @@ public class DialougeManager : MonoBehaviour
         updateCurrentState(currentState);
     }
 
-    public void checkIfInfected(bool check) 
-    {
-        if (check == isInfected) 
-        {
-            misChecks++;
-            Debug.Log("Failed");
-        }
-    }
+  
 
     public void updateCurrentState(CharacterDialougeOBJ chg) 
     {
