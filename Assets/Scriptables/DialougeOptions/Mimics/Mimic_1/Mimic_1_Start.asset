@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: Mimic_1_Start
   m_EditorClassIdentifier: 
-  dialouge: Hello...
+  dialouge: ...
   additionalOptions:
   - {fileID: 11400000, guid: 58b8e200ab7e2334c839dccabf60cca6, type: 2}
   - {fileID: 11400000, guid: de2a81867b816ca4ba8db796adba2461, type: 2}
   - {fileID: 11400000, guid: f6350acfa04c07f4a95ebe8392108157, type: 2}
   - {fileID: 11400000, guid: 797e0302a7de90b469c0404f14a0622c, type: 2}
   additionalOptionsText:
-  - Whats your name?
-  - Whats your presync?
-  - Whats your current Job?
-  - Whats your opinnon on the mimic situation?
+  - What is your name?
+  - What is your home Precinct?
+  - What is your current job?
+  - What are your thoughts on the mimic situation?
