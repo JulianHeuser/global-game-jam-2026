@@ -70,7 +70,8 @@ public class DialougeManager : MonoBehaviour
             id++;
 
         }
-        Dialouge.text = chg.dialouge;
+        
+        Dialouge.text = chg.dialouge.Replace("%NAME", NPCScript.current.getCurrentName()).Replace("%PRECINCT", NPCScript.current.getCurrentPrecinct());
     }
 
     public CharacterSettings grabCurrentSettings()

@@ -10,23 +10,27 @@ public class NPCScript : MonoBehaviour
         "Yurekthos",
         "Vikk",
         "Tholus",
-        "Taenek’tet",
+        "Taenek'tet",
         "Yudur",
         "Jolen",
-        "Valkan"
+        "Valkan",
     };
 
     private static readonly string[] lastNames = {
         "Kalob",
         "Jahel-naarat",
         "Jaelheka",
-        "Bahan’kaneb",
+        "Bahan'kaneb",
         "Kaag",
-        "Olketheret"
+        "Olketheret",
+        "Taen",
+        "Aeprap",
     };
 
     private static readonly string[] lastNames_pastP = {
-        "Taen",
+        "Alcarz",
+        "Ka'albar",
+        "Perlt",
     };
 
 
@@ -48,27 +52,47 @@ public class NPCScript : MonoBehaviour
         current = this;
     }
 
+    private string currentCharacterName = "";
+    private string currentPrecinct = "";
+
     public void changeBody()
     {
         var state = DialougeManager.current.grabCurrentSettings();
         headSprite.sprite = state.head[Random.RandomRange(0, state.head.Count )];
         bodySprite.sprite = state.body[Random.RandomRange(0, state.body.Count )];
         neckSprite.sprite = state.neck[Random.RandomRange(0, state.neck.Count )];
+        
+        Debug.Log("SET BODY");
+        currentCharacterName = getRandomFirstName() + " " + getRandomLastName(state.surnameCanEndWithLetterPastP);
+        currentPrecinct = string.Format("{0}-{1}",
+        	state.precinctNumber[Random.Range(0, state.precinctNumber.Count)],
+        	state.precinctName[Random.Range(0, state.precinctName.Count)]
+        );
+        Debug.Log(currentCharacterName);
+        Debug.Log(currentPrecinct);
 
     }
 
+    public string getCurrentName() {
+        return currentCharacterName;
+    }
+
+
+    public string getCurrentPrecinct() {
+        return currentPrecinct;
+    }
 
     public void setBreathingRate(float rate)
     {
         headBobRate = rate;
     }
 
-    public string getRandomFirstName()
+    private string getRandomFirstName()
     {
         return firstNames[Random.Range(0, firstNames.Length)];
     }
 
-    public string getRandomLastName(bool useLetterPastP)
+    private string getRandomLastName(bool useLetterPastP)
     {
         if (useLetterPastP)
             return lastNames_pastP[Random.Range(0, lastNames_pastP.Length)];
