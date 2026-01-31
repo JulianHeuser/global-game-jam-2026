@@ -161,6 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9183525974410095586}
+  - component: {fileID: 2617929810009176732}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -187,6 +188,30 @@ Transform:
   - {fileID: 904504969192139813}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2617929810009176732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014632771475064912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aebc491a92659195af8f18d3eae9160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heads:
+  - {fileID: 21300000, guid: 691c2a2fa94ae98d28156bd30e1a9b3c, type: 3}
+  - {fileID: 21300000, guid: 07663f7206ca46a0fa2d5d58495dd6b8, type: 3}
+  necks:
+  - {fileID: 21300000, guid: 869746751ec4a56059022d7e06193ca3, type: 3}
+  - {fileID: 21300000, guid: f62e117314f49381380a45338021076d, type: 3}
+  bodies:
+  - {fileID: 21300000, guid: bed9a564538fea62ab5d0c7eee11345c, type: 3}
+  - {fileID: 21300000, guid: 3309ace6ce99b5cbc966d9a2551db2c7, type: 3}
+  headSprite: {fileID: 608897987068038597}
+  neckSprite: {fileID: 7836383680267054985}
+  bodySprite: {fileID: 8325716708969122239}
 --- !u!1 &2094073465518757391
 GameObject:
   m_ObjectHideFlags: 0
