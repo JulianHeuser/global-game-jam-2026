@@ -68,8 +68,14 @@ public class NPCScript : MonoBehaviour
         	state.precinctNumber[Random.Range(0, state.precinctNumber.Count)],
         	state.precinctName[Random.Range(0, state.precinctName.Count)]
         );
-        Debug.Log(currentCharacterName);
-        Debug.Log(currentPrecinct);
+        
+        if (state.rapidBreathing) {
+            headBobIntensity = Random.Range(1.0f, 5.0f);
+            headBobRate = Random.Range(2.5f, 5.0f);
+        } else {
+            headBobIntensity = Random.Range(0.04f, 0.8f);
+            headBobRate = Random.Range(0.5f, 1.0f);
+        }
 
     }
 
@@ -80,11 +86,6 @@ public class NPCScript : MonoBehaviour
 
     public string getCurrentPrecinct() {
         return currentPrecinct;
-    }
-
-    public void setBreathingRate(float rate)
-    {
-        headBobRate = rate;
     }
 
     private string getRandomFirstName()
