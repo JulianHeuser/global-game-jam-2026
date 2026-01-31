@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge: Hello...
   additionalOptions:
-  - {fileID: 11400000, guid: 58b8e200ab7e2334c839dccabf60cca6, type: 2}
-  - {fileID: 11400000, guid: de2a81867b816ca4ba8db796adba2461, type: 2}
-  - {fileID: 11400000, guid: f6350acfa04c07f4a95ebe8392108157, type: 2}
-  - {fileID: 11400000, guid: 797e0302a7de90b469c0404f14a0622c, type: 2}
+  - {fileID: 11400000, guid: c5e05f4f31fc08e42bdda7e937c934c9, type: 2}
+  - {fileID: 11400000, guid: f5f4dad7260273d7d9310fc1ae8e6335, type: 2}
+  - {fileID: 11400000, guid: b5cc0ef6734c40c8294b90bd06fcc5cb, type: 2}
+  - {fileID: 11400000, guid: 80d9078006127bcb781c3a0248b5e36f, type: 2}
   additionalOptionsText:
   - Whats your name?
   - Whats your presync?
