@@ -15,7 +15,7 @@ public class Options : MonoBehaviour
 
     public void selectedNewOption() 
     {
-        DialougeManager.current.updatCurrentState(selectedState);
+        DialougeManager.current.updateCurrentState(selectedState);
     }
     
 
