@@ -10,4 +10,8 @@ public class CharacterDialougeOBJ : ScriptableObject
     public List<CharacterDialougeOBJ> additionalOptions;
 
     public List<string> additionalOptionsText;
+    public List<string> responses;
+
+
+
 }
