@@ -8,9 +8,9 @@ public class DialougeManager : MonoBehaviour
     CharacterDialougeOBJ currentState;
     bool isInfected;
 
+    [SerializeField] List<CharacterSettings> InfectedOptions;
+    [SerializeField] List<CharacterSettings> NonInfectedOptions;
 
-    [SerializeField]List<CharacterDialougeOBJ> infectedLines;
-    [SerializeField]List<CharacterDialougeOBJ> safeLines;
 
     [SerializeField] GameObject dialougeParent;
     [SerializeField] GameObject option;
@@ -33,14 +33,17 @@ public class DialougeManager : MonoBehaviour
     
     public void selectIfInfected() 
     {
+        int gen;
         isInfected = InfectionManager.current.updateInfection();
         if (isInfected) 
         {
-            currentState = infectedLines[Random.RandomRange(0,(infectedLines.Count)-1)];
+            gen = Random.RandomRange(0, (InfectedOptions.Count) - 1);
+            currentState = (InfectedOptions[gen]).TiedTree[Random.RandomRange(0, InfectedOptions[gen].TiedTree.Count - 1)];
             updateCurrentState(currentState);
             return;
         }
-        currentState = infectedLines[Random.RandomRange(0,(safeLines.Count)-1)];
+        gen = Random.RandomRange(0, (NonInfectedOptions.Count) - 1);
+        currentState = (NonInfectedOptions[gen]).TiedTree[Random.RandomRange(0,NonInfectedOptions[gen].TiedTree.Count-1)];
         updateCurrentState(currentState);
     }
 
