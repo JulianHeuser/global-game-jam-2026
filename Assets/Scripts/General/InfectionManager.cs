@@ -31,6 +31,7 @@ public class InfectionManager : MonoBehaviour
     IEnumerator changeOutDelay() 
     {
         LightManager.current.enablePulsing(true);
+        NPCScript.current.changeBody();
         yield return new WaitForSeconds(1.5f);
         LightManager.current.enablePulsing(false);
         StopAllCoroutines();

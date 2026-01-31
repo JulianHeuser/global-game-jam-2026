@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DialougeManager : MonoBehaviour
 {
-    
+    CharacterSettings currentSettings;
     CharacterDialougeOBJ currentState;
+    
     bool isInfected;
 
     [SerializeField] List<CharacterSettings> InfectedOptions;
@@ -39,11 +40,13 @@ public class DialougeManager : MonoBehaviour
         {
             gen = Random.RandomRange(0, (InfectedOptions.Count) - 1);
             currentState = (InfectedOptions[gen]).TiedTree[Random.RandomRange(0, InfectedOptions[gen].TiedTree.Count - 1)];
+            currentSettings = InfectedOptions[gen];
             updateCurrentState(currentState);
             return;
         }
         gen = Random.RandomRange(0, (NonInfectedOptions.Count) - 1);
         currentState = (NonInfectedOptions[gen]).TiedTree[Random.RandomRange(0,NonInfectedOptions[gen].TiedTree.Count-1)];
+        currentSettings= NonInfectedOptions[gen];
         updateCurrentState(currentState);
     }
 
@@ -68,5 +71,9 @@ public class DialougeManager : MonoBehaviour
         Dialouge.text = chg.dialouge;
     }
 
+    public CharacterSettings grabCurrentSettings()
+    {
+        return currentSettings;
+    }
 
 }
