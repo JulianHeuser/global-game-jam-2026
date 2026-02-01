@@ -12,6 +12,8 @@ public class InfectionManager : MonoBehaviour
     int success;
     
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioSource audioSourceButton;
+    [SerializeField] AudioSource[] screams;
 
     private void Awake()
     {
@@ -32,15 +34,21 @@ public class InfectionManager : MonoBehaviour
         if (misChecks >= 3) { FindObjectOfType<ScoreHold>().updateScore(success); SceneLoader.loadScenebyName("GameOver"); }
         StartCoroutine(changeOutDelay());
         strikeCounter.text=misChecks.ToString();
+        
+        if (check)
+            screams[Random.Range(0, screams.Length)].Play();
 
     }
 
     IEnumerator changeOutDelay() 
     {
+    	audioSourceButton.Play();
+	LightManager.current.TurnOff();
+        yield return new WaitForSeconds(0.74f);
+        NPCScript.current.changeBody();
 	audioSource.Play();
         LightManager.current.enablePulsing(true);
-        NPCScript.current.changeBody();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.75f);
         LightManager.current.enablePulsing(false);
         StopAllCoroutines();
 

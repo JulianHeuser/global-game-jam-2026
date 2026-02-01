@@ -9,6 +9,8 @@ public class LightManager : MonoBehaviour
     bool isLerping = false;
     [SerializeField][Range(0,1)]float timerDelay=1f;
     float timer=Mathf.Infinity;
+    
+    bool isOff = false;
 
     private void Awake()
     {
@@ -17,12 +19,21 @@ public class LightManager : MonoBehaviour
 
     public void enablePulsing(bool chg) 
     {
+        isOff = false;
         isLerping = chg;
+    }
+    
+    public void TurnOff() {
+        isOff = true;
     }
 
 
     private void Update()
     {
+    	if (isOff) { 
+    	    SpotLight.intensity = 0.0f;
+            return;
+        }
         if (!isLerping) { SpotLight.intensity = Mathf.Lerp(3, SpotLight.intensity, step); timer = Mathf.Infinity; ; return; }
 
         pullLightInAndOut();
