@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9dcc4021b5595e40aa3981d693a6b9e, type: 3}
+  m_Name: Normal_oddball
+  m_EditorClassIdentifier: 
+  TiedTree:
+  - {fileID: 11400000, guid: 224c3dcd4284e336084d096939a0a56d, type: 2}
+  precinctNumber: 060000000a00000015000000
+  precinctName:
+  - Epsilon
+  surnameCanEndWithLetterPastP: 1
+  rapidBreathing: 0
+  head:
+  - {fileID: 21300000, guid: 691c2a2fa94ae98d28156bd30e1a9b3c, type: 3}
+  - {fileID: 21300000, guid: 5c77f6ec71e81cc14864f30e2c8b962c, type: 3}
+  neck:
+  - {fileID: 21300000, guid: f62e117314f49381380a45338021076d, type: 3}
+  body:
+  - {fileID: 21300000, guid: bed9a564538fea62ab5d0c7eee11345c, type: 3}
