@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasGroup;
+    
+    [SerializeField] AudioSource deathSound;
+
 
     bool loading = false;
 
@@ -72,6 +75,9 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneByName(float delay, string name)
     {
+        if (name == "GameOver") {
+            deathSound.Play();
+        }
         loading = true;
         yield return FadeSceneIn(delay);
         yield return SceneManager.LoadSceneAsync(name);
