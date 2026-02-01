@@ -25,7 +25,7 @@ public class LightManager : MonoBehaviour
 
     private void Update()
     {
-        if (!isLerping) { SpotLight.intensity = Mathf.Lerp(3, SpotLight.intensity, step); timer =Mathf.Infinity; ; return; }
+        if (!isLerping) { SpotLight.intensity = Mathf.Lerp(3, SpotLight.intensity, step); timer = Mathf.Infinity; ; return; }
 
         pullLightInAndOut();
 
@@ -41,10 +41,10 @@ public class LightManager : MonoBehaviour
             
             SpotLight.intensity = Mathf.Lerp(0, SpotLight.intensity, Time.deltaTime*step);
             timer = 0;
-            Debug.Log("Flash out");
+
             return;
         }
-        Debug.Log("Flash in");
+
 
         SpotLight.intensity = Mathf.Lerp(SpotLight.intensity,3, Time.deltaTime*step);
 

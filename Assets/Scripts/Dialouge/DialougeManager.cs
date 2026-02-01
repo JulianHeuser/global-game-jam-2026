@@ -39,7 +39,7 @@ public class DialougeManager : MonoBehaviour
         Debug.Log(isInfected);
         if (isInfected) 
         {
-            gen = Random.RandomRange(0, (InfectedOptions.Count) );
+            gen = Random.RandomRange(0, (InfectedOptions.Count));
             currentState = (InfectedOptions[gen]).TiedTree[Random.RandomRange(0, InfectedOptions[gen].TiedTree.Count)];
             currentSettings = InfectedOptions[gen];
             updateCurrentState(currentState);
