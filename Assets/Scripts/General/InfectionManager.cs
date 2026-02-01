@@ -16,6 +16,7 @@ public class InfectionManager : MonoBehaviour
     
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioSource audioSourceButton;
+    [SerializeField] AudioSource correctSound;
     [SerializeField] AudioSource[] screams;
 
     private void Awake()
@@ -36,7 +37,6 @@ public class InfectionManager : MonoBehaviour
         else { success++; }
         if (misChecks >= 3) { FindObjectOfType<ScoreHold>().updateScore(success); SceneLoader.loadScenebyName("GameOver"); }
         StartCoroutine(changeOutDelay(isInfected == check));
-        strikeCounter.text=misChecks.ToString();
         
         if (check)
             screams[Random.Range(0, screams.Length)].Play();
@@ -48,7 +48,17 @@ public class InfectionManager : MonoBehaviour
     	audioSourceButton.Play();
 	LightManager.current.TurnOff();
 	
-	if (!isCorrect) {
+	if (isCorrect) {
+	    incorrectIndicator.SetActive(false);
+	    correctSound.Play();
+	    strikeCounter.gameObject.SetActive(true);
+
+            yield return new WaitForSeconds(0.185f);
+            strikeCounter.gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.185f);
+            strikeCounter.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.37f);
+        } else {
             GameObject newImageCheck = incorrectIndicator.transform.GetChild(misChecks - 1).gameObject;
             newImageCheck.SetActive(true);
             yield return new WaitForSeconds(0.185f);
@@ -56,14 +66,14 @@ public class InfectionManager : MonoBehaviour
             yield return new WaitForSeconds(0.185f);
             newImageCheck.SetActive(true);
             yield return new WaitForSeconds(0.37f);
-        } else {
-            yield return new WaitForSeconds(0.74f);
         }
         
         NPCScript.current.changeBody();
 	audioSource.Play();
         LightManager.current.enablePulsing(true);
         yield return new WaitForSeconds(0.75f);
+	incorrectIndicator.SetActive(true);
+	strikeCounter.gameObject.SetActive(false);
         LightManager.current.enablePulsing(false);
         StopAllCoroutines();
 
