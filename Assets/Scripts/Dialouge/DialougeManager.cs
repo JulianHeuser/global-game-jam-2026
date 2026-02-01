@@ -39,14 +39,14 @@ public class DialougeManager : MonoBehaviour
         Debug.Log(isInfected);
         if (isInfected) 
         {
-            gen = Random.RandomRange(0, (InfectedOptions.Count) - 1);
+            gen = Random.RandomRange(0, (InfectedOptions.Count) );
             currentState = (InfectedOptions[gen]).TiedTree[Random.RandomRange(0, InfectedOptions[gen].TiedTree.Count)];
             currentSettings = InfectedOptions[gen];
             updateCurrentState(currentState);
             NPCScript.current.changeBody();
             return;
         }
-        gen = Random.RandomRange(0, (NonInfectedOptions.Count) - 1);
+        gen = Random.RandomRange(0, (NonInfectedOptions.Count) );
         currentState = (NonInfectedOptions[gen]).TiedTree[Random.RandomRange(0,NonInfectedOptions[gen].TiedTree.Count)];
         currentSettings= NonInfectedOptions[gen];
         NPCScript.current.changeBody();
