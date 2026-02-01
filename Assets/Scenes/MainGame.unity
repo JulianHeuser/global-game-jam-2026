@@ -6322,7 +6322,7 @@ PrefabInstance:
       objectReference: {fileID: 1971017799}
     - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
       propertyPath: InfectedOptions.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
       propertyPath: 'InfectedOptions.Array.data[1]'
@@ -6335,15 +6335,19 @@ PrefabInstance:
     - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
       propertyPath: 'InfectedOptions.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: be3c7a197b78cb2b59fca5f3ed3e8325, type: 2}
+      objectReference: {fileID: 11400000, guid: c3456f65fda2943f08852929e78f3f9b, type: 2}
     - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
       propertyPath: NonInfectedOptions.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
       propertyPath: 'NonInfectedOptions.Array.data[5]'
       value: 
       objectReference: {fileID: 11400000, guid: be3c7a197b78cb2b59fca5f3ed3e8325, type: 2}
+    - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
+      propertyPath: 'NonInfectedOptions.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c1fbaa1e98868b2ff8ed696f0761cde9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

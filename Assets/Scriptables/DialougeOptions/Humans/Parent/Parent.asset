@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
+  m_Name: Parent
+  m_EditorClassIdentifier: 
+  dialouge: Hello officer.
+  additionalOptions:
+  - {fileID: 11400000, guid: 6bf5e60b041197d4aa4d90193be52cc3, type: 2}
+  - {fileID: 11400000, guid: cb7fa7be2d062695a8cfedc7a8dadb6b, type: 2}
+  - {fileID: 11400000, guid: ed776bc6d1d0a25f89bf42e8001104dc, type: 2}
+  - {fileID: 11400000, guid: 252045de95d6328bd92db5b8c0084f95, type: 2}
+  - {fileID: 11400000, guid: 950922d7c57067b43a0defa5ac4a648a, type: 2}
+  additionalOptionsText:
+  - What is your name?
+  - What is your home Precinct?
+  - Whats is your current job?
+  - What are your thoughts on the mimic situation?
+  - What is your opinion on the Eudoxus Mons legislation?
