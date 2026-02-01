@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge: ...
   additionalOptions:
-  - {fileID: 11400000, guid: 58b8e200ab7e2334c839dccabf60cca6, type: 2}
-  - {fileID: 11400000, guid: de2a81867b816ca4ba8db796adba2461, type: 2}
-  - {fileID: 11400000, guid: f6350acfa04c07f4a95ebe8392108157, type: 2}
-  - {fileID: 11400000, guid: 797e0302a7de90b469c0404f14a0622c, type: 2}
+  - {fileID: 11400000, guid: fc26ad458a88f8222aecbf13dbf5c6cc, type: 2}
+  - {fileID: 11400000, guid: 52450c1a5f8fad21a82f3dd825356641, type: 2}
+  - {fileID: 11400000, guid: bf0e8332eeb1ddaad861a26d9985f7df, type: 2}
+  - {fileID: 11400000, guid: 88772a3dd8802f142bc911e467cd346b, type: 2}
+  - {fileID: 11400000, guid: a8fea2b5324276d2ab938e28a92d132c, type: 2}
   additionalOptionsText:
   - What is your name?
   - What is your home Precinct?
   - What is your current job?
   - What are your thoughts on the mimic situation?
+  - What is your opinion on the Eudoxus Mons legislation?

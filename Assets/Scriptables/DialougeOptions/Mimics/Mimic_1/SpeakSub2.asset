@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub2
   m_EditorClassIdentifier: 
-  dialouge: "%PRECINCT. Not the best place, but it\u2019s home."
+  dialouge: Why do you want to know, asshole.
   additionalOptions:
   - {fileID: 11400000, guid: 466b839613a7d126887f7c82deee4e83, type: 2}
   additionalOptionsText:

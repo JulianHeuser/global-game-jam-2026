@@ -18,8 +18,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de2a81867b816ca4ba8db796adba2461, type: 2}
   - {fileID: 11400000, guid: f6350acfa04c07f4a95ebe8392108157, type: 2}
   - {fileID: 11400000, guid: 797e0302a7de90b469c0404f14a0622c, type: 2}
+  - {fileID: 11400000, guid: 73a012a38234265ba9bda35ebdf3c235, type: 2}
   additionalOptionsText:
   - What is your name?
   - What is your home Precinct?
   - Whats isyour current job?
   - What are your thoughts on the mimic situation?
+  - What is your opinion on the Eudoxus Mons legislation?

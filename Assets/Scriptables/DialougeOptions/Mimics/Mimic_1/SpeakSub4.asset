@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub4
   m_EditorClassIdentifier: 
-  dialouge: "It\u2019s one of the scariest things I can imagine. Not knowing who
-    to trust, what\u2019s real and what\u2019s not, I can\u2019t believe the last
-    provisional administrator was one."
+  dialouge: Hey, I don't want any skin in this game. All I want is to move off the
+    colonies and go back home.
   additionalOptions:
   - {fileID: 11400000, guid: 466b839613a7d126887f7c82deee4e83, type: 2}
   additionalOptionsText:

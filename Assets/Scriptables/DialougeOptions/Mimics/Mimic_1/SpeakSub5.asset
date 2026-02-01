@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
-  m_Name: SpeakSub1
+  m_Name: SpeakSub5
   m_EditorClassIdentifier: 
-  dialouge: I'm not telling you that shit.
+  dialouge: Hey, I don't want any skin in this game. All I want is to move off the
+    colonies and go back home.
   additionalOptions:
   - {fileID: 11400000, guid: 466b839613a7d126887f7c82deee4e83, type: 2}
   additionalOptionsText:
