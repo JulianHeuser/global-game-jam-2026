@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9dcc4021b5595e40aa3981d693a6b9e, type: 3}
-  m_Name: Normal_oddball
+  m_Name: Normal_doublebait
   m_EditorClassIdentifier: 
   TiedTree:
-  - {fileID: 11400000, guid: f6924c018056b77468b16faf526b7547, type: 2}
-  precinctNumber: 060000000a00000015000000
+  - {fileID: 11400000, guid: bb5782390718f28a1b5ef1a002c65846, type: 2}
+  precinctNumber: 030000000b00000008000000
   precinctName:
-  - Epsilon
+  - Zeta
   surnameCanEndWithLetterPastP: 1
   rapidBreathing: 0
   head:

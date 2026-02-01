@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub4
   m_EditorClassIdentifier: 
-  dialouge: It may not be the nicest thing in the world, but she's got a good gig
-    doing maintenence on life support systems. It takes a real diligent hand to get
-    those things back up and running.
+  dialouge: She's really had to cut back on her rations, haha. But in all seriousness,
+    it really does suck having to eat once every two days now.
   additionalOptions:
   - {fileID: 11400000, guid: bb5782390718f28a1b5ef1a002c65846, type: 2}
   additionalOptionsText:

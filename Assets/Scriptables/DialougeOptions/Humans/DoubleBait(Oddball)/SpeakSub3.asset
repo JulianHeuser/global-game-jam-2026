@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub3
   m_EditorClassIdentifier: 
-  dialouge: Some of my freinds come from 16-Alpha, and shit can get rough in those
-    spots. That's why I'm so lucky I live on %PRECINCT. It might be a little far
-    from most resources, but we make do over there.
+  dialouge: It may not be the nicest thing in the world, but she's got a good gig
+    doing maintenence on life support systems. It takes a real diligent hand to get
+    those things back up and running.
   additionalOptions:
   - {fileID: 11400000, guid: bb5782390718f28a1b5ef1a002c65846, type: 2}
   additionalOptionsText:
