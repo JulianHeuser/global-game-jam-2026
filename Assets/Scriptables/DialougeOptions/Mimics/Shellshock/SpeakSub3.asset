@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub3
   m_EditorClassIdentifier: 
-  dialouge: I'm a robotics technitian for expedtition vehicles... but I guess that
+  dialouge: I'm a robotics technician for expedtition vehicles... but I guess that
     might change soon... heh.
   additionalOptions:
   - {fileID: 11400000, guid: abcc5125e5ee603538b935a5b156bd45, type: 2}
