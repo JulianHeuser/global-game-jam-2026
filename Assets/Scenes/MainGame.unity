@@ -6389,7 +6389,7 @@ PrefabInstance:
     - target: {fileID: 3203093687031494515, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e13ad28579f83fa4ebcc7c04c225ccbc, type: 3}
+      objectReference: {fileID: -8644889942409211090, guid: e244c55991900c84184ef81c53bb46e7, type: 3}
     - target: {fileID: 3272547279668524563, guid: 405bd6b9256bdcf41871d48071c9dfc9, type: 3}
       propertyPath: m_Name
       value: PlayerOverlay
