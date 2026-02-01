@@ -47,9 +47,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InfectedOptions:
   - {fileID: 11400000, guid: 1e03b9237bd8fbf2bad3b66e661cae41, type: 2}
+  - {fileID: 11400000, guid: 2440907fee2f7be848902f916b3ef06e, type: 2}
   NonInfectedOptions:
   - {fileID: 11400000, guid: 12b343d5f7ce21e1296b53b0ea433254, type: 2}
+  - {fileID: 11400000, guid: 8067a00dcbd88466a9c50cf1aacd73f0, type: 2}
+  - {fileID: 11400000, guid: 548cba9dfadec5de48a9adc4d66d9cb6, type: 2}
   - {fileID: 11400000, guid: 4e5c2f2ee0b2e9793a891ac8fcabde4b, type: 2}
+  - {fileID: 11400000, guid: b2784b6bbb462b1a7a994a42acccd616, type: 2}
   dialougeParent: {fileID: 0}
   option: {fileID: 3450696548806726565, guid: 93590546fe1d4b94c8df121c2fcf93d5, type: 3}
   Dialouge: {fileID: 0}

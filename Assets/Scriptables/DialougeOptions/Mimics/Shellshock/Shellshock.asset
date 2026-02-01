@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
+  m_Name: Shellshock
+  m_EditorClassIdentifier: 
+  dialouge: Hey...
+  additionalOptions:
+  - {fileID: 11400000, guid: 9037598edb18c756289f1b144ec75e2d, type: 2}
+  - {fileID: 11400000, guid: 02fa87d03ab1b1c408202fcc10e04271, type: 2}
+  - {fileID: 11400000, guid: 2a1d19db7d8d524799be07fad22805e5, type: 2}
+  - {fileID: 11400000, guid: 1fbc822974346c22e9f56790ebacf0f0, type: 2}
+  - {fileID: 11400000, guid: 686a3fce17131b62cbd01ae9b7b92450, type: 2}
+  additionalOptionsText:
+  - What is your name?
+  - What is your home Precinct?
+  - Whats is your current job?
+  - What are your thoughts on the mimic situation?
+  - What is your opinion on the Eudoxus Mons legislation?

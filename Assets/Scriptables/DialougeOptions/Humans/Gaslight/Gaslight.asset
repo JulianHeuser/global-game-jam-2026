@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
+  m_Name: Gaslight
+  m_EditorClassIdentifier: 
+  dialouge: Hello officer, is this regarding the mimic situation?
+  additionalOptions:
+  - {fileID: 11400000, guid: 34b1cd7d82963b57b900195ada8ee722, type: 2}
+  - {fileID: 11400000, guid: 054c965dc5cbef2d9b3a868a8a80268d, type: 2}
+  - {fileID: 11400000, guid: f094dadf649594507a03215eca70328c, type: 2}
+  - {fileID: 11400000, guid: 898c0a77eefdaf3659507987801c8042, type: 2}
+  - {fileID: 11400000, guid: ea203dfbf6ab5ef67866b1d108ddf902, type: 2}
+  additionalOptionsText:
+  - What is your name?
+  - What is your home Precinct?
+  - Whats is your current job?
+  - What are your thoughts on the mimic situation?
+  - What is your opinion on the Eudoxus Mons legislation?

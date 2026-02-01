@@ -1078,7 +1078,7 @@ MonoBehaviour:
     see Addendum 1.\n\n    B. Expressed dissatisfaction with the Eudoxus Mons legislation
     indicates a mimic.\n\nAddendum 1\n    A. A fast breathing rate often indicates
     a mimic, with the following notes:\n        a. Mimics from precincts 12-Sigma,
-    02-Gamma, 24-Theta, and 31-Beta do not display abnormal breathing rates.\n       
+    02-Gamma, 24-Theta, and 31-Beta will never display abnormal breathing rates.\n       
     b. Recent incidents in Alpha precincts may cause increased breathing rates in
     otherwise healthy colonists.\n"
   m_isRightToLeft: 0
