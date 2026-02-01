@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub5
   m_EditorClassIdentifier: 
-  dialouge: Hey, I don't want any skin in this game. All I want is to move off the
-    colonies and go back home.
+  dialouge: Really? You're going to ask me this? Tell me, what would you say after
+    you've been eating that god damn fungus for decades -- after your admin ups your
+    extraction quota FIVE TIMES. He'd think it's a crock of shit.
   additionalOptions:
   - {fileID: 11400000, guid: 466b839613a7d126887f7c82deee4e83, type: 2}
   additionalOptionsText:
