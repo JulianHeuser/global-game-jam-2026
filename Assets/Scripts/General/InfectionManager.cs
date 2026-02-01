@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class InfectionManager : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class InfectionManager : MonoBehaviour
     bool isInfected;
     [SerializeField][Range(0, 10)] float infectedProbability;
     int misChecks;
-
+    [SerializeField] TMP_Text strikeCounter;
     
 
     private void Awake()
@@ -24,7 +25,7 @@ public class InfectionManager : MonoBehaviour
     {
         StartCoroutine(changeOutDelay());
         if (isInfected!=check) { misChecks++; }
-
+        strikeCounter.text=misChecks.ToString();
 
     }
 
