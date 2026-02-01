@@ -11,6 +11,9 @@ public class InfectionManager : MonoBehaviour
     [SerializeField] TMP_Text strikeCounter;
     int success;
     
+    
+    [SerializeField] GameObject incorrectIndicator;
+    
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioSource audioSourceButton;
     [SerializeField] AudioSource[] screams;
@@ -32,7 +35,7 @@ public class InfectionManager : MonoBehaviour
         if (isInfected != check) { misChecks++; }
         else { success++; }
         if (misChecks >= 3) { FindObjectOfType<ScoreHold>().updateScore(success); SceneLoader.loadScenebyName("GameOver"); }
-        StartCoroutine(changeOutDelay());
+        StartCoroutine(changeOutDelay(isInfected == check));
         strikeCounter.text=misChecks.ToString();
         
         if (check)
@@ -40,11 +43,23 @@ public class InfectionManager : MonoBehaviour
 
     }
 
-    IEnumerator changeOutDelay() 
+    IEnumerator changeOutDelay(bool isCorrect) 
     {
     	audioSourceButton.Play();
 	LightManager.current.TurnOff();
-        yield return new WaitForSeconds(0.74f);
+	
+	if (!isCorrect) {
+            GameObject newImageCheck = incorrectIndicator.transform.GetChild(misChecks - 1).gameObject;
+            newImageCheck.SetActive(true);
+            yield return new WaitForSeconds(0.185f);
+            newImageCheck.SetActive(false);
+            yield return new WaitForSeconds(0.185f);
+            newImageCheck.SetActive(true);
+            yield return new WaitForSeconds(0.37f);
+        } else {
+            yield return new WaitForSeconds(0.74f);
+        }
+        
         NPCScript.current.changeBody();
 	audioSource.Play();
         LightManager.current.enablePulsing(true);
