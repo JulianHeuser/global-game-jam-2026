@@ -18,8 +18,8 @@ public class InfectionManager : MonoBehaviour
 
     public bool updateInfection() 
     {
-        var gen = Random.RandomRange(0, 10);
-        var genBool = (gen < infectedProbability);
+        var genBool = (Random.RandomRange(0, 10) < infectedProbability);
+        isInfected=genBool;
         return genBool;
     }
 

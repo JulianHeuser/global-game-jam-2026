@@ -691,9 +691,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InfectedOptions:
-  - {fileID: 11400000, guid: 12b343d5f7ce21e1296b53b0ea433254, type: 2}
-  NonInfectedOptions:
   - {fileID: 11400000, guid: 1e03b9237bd8fbf2bad3b66e661cae41, type: 2}
+  NonInfectedOptions:
+  - {fileID: 11400000, guid: 12b343d5f7ce21e1296b53b0ea433254, type: 2}
+  - {fileID: 11400000, guid: 4e5c2f2ee0b2e9793a891ac8fcabde4b, type: 2}
   dialougeParent: {fileID: 1971017799}
   option: {fileID: 3450696548806726565, guid: 93590546fe1d4b94c8df121c2fcf93d5, type: 3}
   Dialouge: {fileID: 1593138486}
