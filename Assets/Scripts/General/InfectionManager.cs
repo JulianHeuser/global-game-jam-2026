@@ -6,7 +6,7 @@ public class InfectionManager : MonoBehaviour
 {
     public static InfectionManager current;
     bool isInfected;
-    [SerializeField][Range(0, 10)] float infectedProbability;
+    [SerializeField][Range(0, 10)] int infectedProbability=5;
     int misChecks;
     [SerializeField] TMP_Text strikeCounter;
     
@@ -18,13 +18,15 @@ public class InfectionManager : MonoBehaviour
 
     public bool updateInfection() 
     {
-        return Random.RandomRange(0, 10) >= infectedProbability;
+        var gen = Random.RandomRange(0, 10);
+        var genBool = (gen < infectedProbability);
+        return genBool;
     }
 
     public void checkIfInfected(bool check)
     {
+        if (isInfected != check) { misChecks++; }
         StartCoroutine(changeOutDelay());
-        if (isInfected!=check) { misChecks++; }
         strikeCounter.text=misChecks.ToString();
 
     }
