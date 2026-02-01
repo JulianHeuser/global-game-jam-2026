@@ -10,7 +10,7 @@ public class InfectionManager : MonoBehaviour
     int misChecks;
     [SerializeField] TMP_Text strikeCounter;
     int success;
-    
+    [SerializeField] GameObject rayBlock;
     
     [SerializeField] GameObject incorrectIndicator;
     
@@ -75,6 +75,7 @@ public class InfectionManager : MonoBehaviour
 	incorrectIndicator.SetActive(true);
 	strikeCounter.gameObject.SetActive(false);
         LightManager.current.enablePulsing(false);
+        rayBlock.SetActive(false);
         StopAllCoroutines();
 
     }

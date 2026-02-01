@@ -35,6 +35,7 @@ public class DialougeManager : MonoBehaviour
     
     public void selectIfInfected() 
     {
+
         int gen;
         isInfected = InfectionManager.current.updateInfection();
         Debug.Log(isInfected);
