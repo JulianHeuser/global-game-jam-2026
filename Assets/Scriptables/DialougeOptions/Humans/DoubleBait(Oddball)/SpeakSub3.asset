@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SpeakSub3
   m_EditorClassIdentifier: 
   dialouge: It may not be the nicest thing in the world, but she's got a good gig
-    doing maintenence on life support systems. It takes a real diligent hand to get
-    those things back up and running.
+    doing maintenence on life support systems. It takes diligence to get those things
+    back up and running.
   additionalOptions:
   - {fileID: 11400000, guid: bb5782390718f28a1b5ef1a002c65846, type: 2}
   additionalOptionsText:
