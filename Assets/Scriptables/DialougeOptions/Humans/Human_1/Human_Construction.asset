@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
+  m_Name: Human_Construction
+  m_EditorClassIdentifier: 
+  dialouge: Hello...
+  additionalOptions:
+  - {fileID: 11400000, guid: c5e05f4f31fc08e42bdda7e937c934c9, type: 2}
+  - {fileID: 11400000, guid: f5f4dad7260273d7d9310fc1ae8e6335, type: 2}
+  - {fileID: 11400000, guid: b5cc0ef6734c40c8294b90bd06fcc5cb, type: 2}
+  - {fileID: 11400000, guid: 80d9078006127bcb781c3a0248b5e36f, type: 2}
+  - {fileID: 11400000, guid: 86bc6c35ce9505b57825812b79fec327, type: 2}
+  additionalOptionsText:
+  - What is your name?
+  - What is your home Precinct?
+  - What is your current job?
+  - What are your thoughts on the mimic situation?
+  - What is your opinion on the Eudoxus Mons legislation?

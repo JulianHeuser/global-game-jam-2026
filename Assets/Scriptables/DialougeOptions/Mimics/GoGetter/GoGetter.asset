@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
-  m_Name: Mimic_1_Start
+  m_Name: GoGetter
   m_EditorClassIdentifier: 
-  dialouge: ...
+  dialouge: Good to see you today, officer.
   additionalOptions:
-  - {fileID: 11400000, guid: fc26ad458a88f8222aecbf13dbf5c6cc, type: 2}
-  - {fileID: 11400000, guid: 52450c1a5f8fad21a82f3dd825356641, type: 2}
-  - {fileID: 11400000, guid: bf0e8332eeb1ddaad861a26d9985f7df, type: 2}
-  - {fileID: 11400000, guid: 88772a3dd8802f142bc911e467cd346b, type: 2}
-  - {fileID: 11400000, guid: a8fea2b5324276d2ab938e28a92d132c, type: 2}
+  - {fileID: 11400000, guid: dfbc2dd7de9b6b2d6807bb81ec992cc3, type: 2}
+  - {fileID: 11400000, guid: a5cce0a7d23ec606b8a93c72ce40b0ca, type: 2}
+  - {fileID: 11400000, guid: be142739e8d9c58f3bace0ef166ba6ec, type: 2}
+  - {fileID: 11400000, guid: 68fc9e0981a06f27e84a2f81e7b44596, type: 2}
+  - {fileID: 11400000, guid: 47e94263bb7bc2516a4c952cf677cc3c, type: 2}
   additionalOptionsText:
   - What is your name?
   - What is your home Precinct?
-  - What is your current job?
+  - Whats is your current job?
   - What are your thoughts on the mimic situation?
   - What is your opinion on the Eudoxus Mons legislation?

@@ -6031,6 +6031,18 @@ PrefabInstance:
       propertyPath: dialougeParent
       value: 
       objectReference: {fileID: 1971017799}
+    - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
+      propertyPath: InfectedOptions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
+      propertyPath: 'InfectedOptions.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 686e39470a8fbb2e88455f326c054946, type: 2}
+    - target: {fileID: 7653513328840505663, guid: a3c49b86916fcb1408328fb27ca08eb5, type: 3}
+      propertyPath: 'InfectedOptions.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2440907fee2f7be848902f916b3ef06e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
