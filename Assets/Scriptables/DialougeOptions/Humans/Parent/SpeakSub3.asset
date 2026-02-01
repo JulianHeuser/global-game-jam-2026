@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub3
   m_EditorClassIdentifier: 
-  dialouge: Caregiver. I have family in 09-Beta.
+  dialouge: Habitation module construction.
   additionalOptions:
   - {fileID: 11400000, guid: fac746b38d1e392b78f017b06607d7e0, type: 2}
   additionalOptionsText:

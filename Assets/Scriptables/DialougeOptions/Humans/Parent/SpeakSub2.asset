@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66351d255eac7df4b905623bba96513a, type: 3}
   m_Name: SpeakSub2
   m_EditorClassIdentifier: 
-  dialouge: I'm from %PRECINCT... I need to visit my kids in 09-Beta.
+  dialouge: I'm from %PRECINCT... I need to visit my kids in 09-Beta. Dont worry
+    though, I have clearance for cross-precinct travel
   additionalOptions:
   - {fileID: 11400000, guid: fac746b38d1e392b78f017b06607d7e0, type: 2}
   additionalOptionsText:
