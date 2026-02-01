@@ -6,6 +6,7 @@ public class NPCScript : MonoBehaviour
 {
     public static NPCScript current;
 
+
     private static readonly string[] firstNames = {
         "Yurekthos",
         "Vikk",
@@ -14,23 +15,40 @@ public class NPCScript : MonoBehaviour
         "Yudur",
         "Jolen",
         "Valkan",
+        "Madu'akirbrak",
+        "Haeborth",
+        "Kaeth-Faesketh",
+        "Kaadur",
+        "Sakt",
+        "Jako-kybranokod",
+        "Huth-brehen",
+        "Yeadsoboroth",
+        "Yeag",
     };
 
     private static readonly string[] lastNames = {
         "Kalob",
-        "Jahel-naarat",
         "Jaelheka",
         "Bahan'kaneb",
         "Kaag",
-        "Olketheret",
         "Taen",
         "Aeprap",
+        "Yakdai",
+        "Skion",
+        "Jhorsk",
+        "Na’on",
+        "Jaadkareden",
     };
 
     private static readonly string[] lastNames_pastP = {
         "Alcarz",
         "Ka'albar",
-        "Perlt",
+        "Keth'tetsev",
+        "Kyunsabov",
+        "Gharka'er",
+        "Jahel-naarat",
+        "Olketheret",
+        "Maeheket",
     };
 
 
