@@ -76,9 +76,9 @@ public class NPCScript : MonoBehaviour
     public void changeBody()
     {
         var state = DialougeManager.current.grabCurrentSettings();
-        headSprite.sprite = state.head[Random.RandomRange(0, state.head.Count )];
-        bodySprite.sprite = state.body[Random.RandomRange(0, state.body.Count )];
-        neckSprite.sprite = state.neck[Random.RandomRange(0, state.neck.Count )];
+        headSprite.sprite = state.head[Random.Range(0, state.head.Count )];
+        bodySprite.sprite = state.body[Random.Range(0, state.body.Count )];
+        neckSprite.sprite = state.neck[Random.Range(0, state.neck.Count )];
         
         Debug.Log("SET BODY");
         currentCharacterName = getRandomFirstName() + " " + getRandomLastName(state.surnameCanEndWithLetterPastP);
