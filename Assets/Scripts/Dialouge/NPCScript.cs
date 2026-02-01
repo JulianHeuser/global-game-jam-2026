@@ -52,6 +52,8 @@ public class NPCScript : MonoBehaviour
     };
 
 
+    [SerializeField]
+    private AudioSource audioSource;
 
     [SerializeField]
     private SpriteRenderer headSprite;
@@ -88,9 +90,11 @@ public class NPCScript : MonoBehaviour
         );
         
         if (state.rapidBreathing) {
+            audioSource.Play();
             headBobIntensity = Random.Range(0.1f, 0.2f);
             headBobRate = Random.Range(2.5f, 5.0f);
         } else {
+            audioSource.Stop();
             headBobIntensity = Random.Range(0.04f, 0.08f);
             headBobRate = Random.Range(0.5f, 1.0f);
         }
