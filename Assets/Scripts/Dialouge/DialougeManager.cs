@@ -16,6 +16,7 @@ public class DialougeManager : MonoBehaviour
     [SerializeField] GameObject dialougeParent;
     [SerializeField] GameObject option;
     [SerializeField] TMP_Text Dialouge;
+    [SerializeField] AudioSource audioSource;
 
     public static DialougeManager current;
 
@@ -55,8 +56,11 @@ public class DialougeManager : MonoBehaviour
 
   
 
-    public void updateCurrentState(CharacterDialougeOBJ chg) 
+    public void updateCurrentState(CharacterDialougeOBJ chg, bool playSound = false) 
     {
+        if (playSound)
+            audioSource.Play();
+    
         currentState = chg;
         foreach(var item in GameObject.FindGameObjectsWithTag("DialougeOption")) 
         {

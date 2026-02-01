@@ -10,6 +10,8 @@ public class InfectionManager : MonoBehaviour
     int misChecks;
     [SerializeField] TMP_Text strikeCounter;
     int success;
+    
+    [SerializeField] AudioSource audioSource;
 
     private void Awake()
     {
@@ -35,6 +37,7 @@ public class InfectionManager : MonoBehaviour
 
     IEnumerator changeOutDelay() 
     {
+	audioSource.Play();
         LightManager.current.enablePulsing(true);
         NPCScript.current.changeBody();
         yield return new WaitForSeconds(1.5f);
