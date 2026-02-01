@@ -9,7 +9,7 @@ public class InfectionManager : MonoBehaviour
     [SerializeField][Range(0, 10)] int infectedProbability=5;
     int misChecks;
     [SerializeField] TMP_Text strikeCounter;
-    
+    int success;
 
     private void Awake()
     {
@@ -26,6 +26,8 @@ public class InfectionManager : MonoBehaviour
     public void checkIfInfected(bool check)
     {
         if (isInfected != check) { misChecks++; }
+        else { success++; }
+        if (misChecks >= 3) { FindObjectOfType<ScoreHold>().updateScore(success); SceneLoader.loadScenebyName("GameOver"); }
         StartCoroutine(changeOutDelay());
         strikeCounter.text=misChecks.ToString();
 
