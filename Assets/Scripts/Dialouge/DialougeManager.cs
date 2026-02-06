@@ -6,11 +6,8 @@ public class DialougeManager : MonoBehaviour
 {
     CharacterSettings currentSettings;
     CharacterDialougeOBJ currentState;
-    
-    bool isInfected;
 
-    [SerializeField] List<CharacterSettings> InfectedOptions;
-    [SerializeField] List<CharacterSettings> NonInfectedOptions;
+    [SerializeField] List<CharacterSettings> characterList;
 
 
     [SerializeField] GameObject dialougeParent;
@@ -19,6 +16,8 @@ public class DialougeManager : MonoBehaviour
     [SerializeField] AudioSource audioSource;
 
     public static DialougeManager current;
+
+    private int currentOptionIndex = 0;
 
     private void Awake()
     {
@@ -35,26 +34,21 @@ public class DialougeManager : MonoBehaviour
     
     public void selectIfInfected() 
     {
-
-        int gen;
-        isInfected = InfectionManager.current.updateInfection();
-        Debug.Log(isInfected);
-        if (isInfected) 
-        {
-            gen = Random.Range(0, (InfectedOptions.Count));
-            currentState = (InfectedOptions[gen]).TiedTree[Random.Range(0, InfectedOptions[gen].TiedTree.Count)];
-            currentSettings = InfectedOptions[gen];
+        if (currentOptionIndex < characterList.Count) {
+            currentState = (characterList[currentOptionIndex]).TiedTree[Random.Range(0,characterList[currentOptionIndex].TiedTree.Count)];
+            currentSettings= characterList[currentOptionIndex];
             updateCurrentState(currentState);
             NPCScript.current.changeBody();
-            return;
+            InfectionManager.current.setInfection(currentSettings.isInfected);
         }
-        gen = Random.Range(0, (NonInfectedOptions.Count) );
-        currentState = (NonInfectedOptions[gen]).TiedTree[Random.Range(0,NonInfectedOptions[gen].TiedTree.Count)];
-        currentSettings= NonInfectedOptions[gen];
-        NPCScript.current.changeBody();
-        updateCurrentState(currentState);
+
+        currentOptionIndex++;
     }
 
+    public bool isLast() {
+        print(currentOptionIndex);
+        return currentOptionIndex > characterList.Count;
+    }
   
 
     public void updateCurrentState(CharacterDialougeOBJ chg, bool playSound = false) 

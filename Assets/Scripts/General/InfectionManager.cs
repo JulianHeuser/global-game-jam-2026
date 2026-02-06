@@ -6,7 +6,6 @@ public class InfectionManager : MonoBehaviour
 {
     public static InfectionManager current;
     bool isInfected;
-    [SerializeField][Range(0, 10)] int infectedProbability=5;
     int misChecks;
     [SerializeField] TMP_Text strikeCounter;
     int success;
@@ -24,11 +23,9 @@ public class InfectionManager : MonoBehaviour
         current = this;
     }
 
-    public bool updateInfection() 
+    public void setInfection(bool p_isInfected) 
     {
-        var genBool = (Random.Range(0, 10) < infectedProbability);
-        isInfected=genBool;
-        return genBool;
+        isInfected=p_isInfected;
     }
 
     public void checkIfInfected(bool check)
@@ -55,6 +52,11 @@ public class InfectionManager : MonoBehaviour
 
             yield return new WaitForSeconds(0.185f);
             strikeCounter.gameObject.SetActive(false);
+
+            if (DialougeManager.current.isLast()) {
+                NPCScript.current.hide();
+            }
+
             yield return new WaitForSeconds(0.185f);
             strikeCounter.gameObject.SetActive(true);
             yield return new WaitForSeconds(0.37f);
@@ -67,14 +69,27 @@ public class InfectionManager : MonoBehaviour
             newImageCheck.SetActive(true);
             yield return new WaitForSeconds(0.37f);
         }
-        
-        NPCScript.current.changeBody();
-	audioSource.Play();
+
+        if (!DialougeManager.current.isLast()) {
+            NPCScript.current.changeBody();
+            audioSource.Play();
+        }
+
         LightManager.current.enablePulsing(true);
         yield return new WaitForSeconds(0.75f);
-	incorrectIndicator.SetActive(true);
-	strikeCounter.gameObject.SetActive(false);
+        if (!DialougeManager.current.isLast()) {
+            incorrectIndicator.SetActive(true);
+            strikeCounter.gameObject.SetActive(false);
+        }
+
         LightManager.current.enablePulsing(false);
+
+        if (DialougeManager.current.isLast()) {
+            yield return new WaitForSeconds(1.0f);
+            SceneLoader.loadScenebyName("Win");
+            StopAllCoroutines();
+        }
+
         rayBlock.SetActive(false);
         StopAllCoroutines();
 

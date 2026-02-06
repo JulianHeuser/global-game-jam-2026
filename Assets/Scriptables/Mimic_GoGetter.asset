@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9dcc4021b5595e40aa3981d693a6b9e, type: 3}
   m_Name: Mimic_GoGetter
   m_EditorClassIdentifier: 
+  isInfected: 1
   TiedTree:
   - {fileID: 11400000, guid: a4b54bdae346879c3a4062d89618906c, type: 2}
   precinctNumber: 050000001000000007000000150000000c000000

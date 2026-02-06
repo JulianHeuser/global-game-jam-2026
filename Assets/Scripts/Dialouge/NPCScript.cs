@@ -101,6 +101,12 @@ public class NPCScript : MonoBehaviour
 
     }
 
+    public void hide() {
+        headSprite.enabled = false;
+        neckSprite.enabled = false;
+        bodySprite.enabled = false;
+    }
+
     public string getCurrentName() {
         return currentCharacterName;
     }
